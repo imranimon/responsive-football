@@ -1,0 +1,271 @@
+/* Coommon-Style */
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+/* Header-section */
+.main-header {
+    background: #2D25A0;
+    width: 100%;
+    height: 600x;
+}
+
+.headrer-dashboard {
+    display: flex;
+    padding: 100px 150px;
+}
+
+.headrer-dashboard:hover .thumbnail img {
+    transform: scale(1.2);
+    transition: transform .5s ease-in-out;
+}
+
+.header-info {
+    padding: 80px 100px 100px 100px;
+    width: 50%;
+}
+
+.thumbnail {
+    width: 50%;
+
+}
+
+.title h1 {
+    font-size: 64px;
+    font-weight: bold;
+    color: white;
+}
+
+.button {
+    margin-top: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #E02C6D;
+    width: 168px;
+    height: 44px;
+}
+
+.button:hover {
+    box-shadow: 2px 2px #bd96a4a6;
+}
+
+.button span {
+    margin-left: 5px;
+    align-items: center;
+}
+
+.button a {
+    text-decoration: none;
+    color: white;
+}
+
+
+
+.thumbnail img {
+    margin-left: 80px;
+    width: 500px;
+    height: 400px;
+}
+
+/* Player Details */
+
+.players {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    margin: 70px 10%;
+    place-items: center;
+}
+
+.player {
+    padding: 10px;
+    width: 301px;
+    height: 430px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+
+.player:hover {
+    transform: scale(1.1);
+    transition: transform .5s ease-in-out;
+}
+
+.player img {
+    width: 300px;
+    height: 256px;
+}
+
+.player h1 {
+    margin-top: 16px;
+    margin-bottom: 10px;
+    color: #18191F;
+    font-size: 28px;
+    font-weight: bolder;
+}
+
+.player p {
+    color: #6C6C6C;
+    font-size: 16px;
+    margin-bottom: 33px;
+}
+
+/* Blogs Style */
+.blogs-heading{
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.blogs {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    margin: 70px 5%;
+    place-items: center;
+}
+
+.blog {
+    padding: 10px;
+    width: 250px;
+    height: 300px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+
+.blog h2 {
+    margin-top: 16px;
+    margin-bottom: 10px;
+    color: #18191F;
+    font-size: 28px;
+    font-weight: bolder;
+}
+
+.blog p {
+    color: #6C6C6C;
+    font-size: 16px;
+    margin-bottom: 33px;
+}
+
+.blog a{
+    color: #9793c2;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+
+/* Footer info Style */
+
+
+.logo img {
+    height: 110px;
+    width: 480px;
+}
+
+.footer-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-logos {
+    margin: 5px;
+    margin-top: 40px;
+}
+
+.social-logo {
+    padding: 7px;
+    background-color: rgb(243, 238, 238);
+    border-radius: 50%;
+    margin: 0px 15px;
+}
+
+.social-logo i {
+
+    color: gray;
+}
+
+
+.copyright {
+    margin-top: 40px;
+    font-size: 18px;
+    margin-bottom: 140px;
+}
+
+
+
+
+
+@media only screen and (max-width:668px) {
+
+    .headrer-dashboard {
+        flex-direction: column;
+        padding: 10%;
+    }
+    .header-info{
+        padding: 66px 102px 83px 54px;
+    }
+    
+    .title h1 {
+        font-size: 40px;
+    }
+
+    .thumbnail img {
+        margin-left: 0;
+        width: 400px;
+        height: 300px;
+    }
+
+    .players {
+        grid-template-columns: repeat(1, 1fr);
+        place-items: center;
+    }
+    .logo img {
+        height: 100px;
+        width: 400px;
+    }
+
+    .blogs {
+        grid-template-columns: repeat(1, 1fr);
+        place-items: center;
+    }
+
+}
+
+
+@media only screen and (min-width:668px) and (max-width:992px) {
+    .headrer-dashboard {
+        padding: 10%;
+    }
+    .header-info{
+        padding: 66px 102px 83px 54px;
+    }
+    
+    .title h1 {
+        font-size: 40px;
+    }
+
+    .thumbnail img {
+        margin-left: 0;
+        width: 400px;
+        height: 300px;
+    }
+
+    .players {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .blogs {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}

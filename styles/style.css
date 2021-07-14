@@ -7,7 +7,7 @@
     font-family: 'Lato', sans-serif;
 }
 
-/* Header-section */
+/* Header-section Style */
 .main-header {
     background: #2D25A0;
     width: 100%;
@@ -73,7 +73,7 @@
     height: 400px;
 }
 
-/* Player Details */
+/* Player Details Style */
 
 .players {
     display: grid;
@@ -160,6 +160,33 @@
     font-size: 20px;
 }
 
+/* Banner-styles */
+.banner{
+    display: flex;
+    padding: 100px 150px;
+
+}
+
+.banner .banner-info{
+    padding: 80px 100px 100px 100px;
+    width: 50%;
+}
+
+.banner-info h1{
+    font-size: 64px;
+    font-weight: bold;
+}
+.banner-info p{
+    margin: 10px 0px;
+    color: gray;
+}
+.banner-image img{
+    margin-left: 80px;
+    width: 500px;
+    height: 400px;
+    
+}
+
 
 
 /* Footer info Style */
@@ -207,6 +234,7 @@
 
 @media only screen and (max-width:668px) {
 
+    /* Header responsive */
     .headrer-dashboard {
         flex-direction: column;
         padding: 10%;
@@ -225,6 +253,8 @@
         height: 300px;
     }
 
+    /* Player Responsive */
+
     .players {
         grid-template-columns: repeat(1, 1fr);
         place-items: center;
@@ -234,15 +264,39 @@
         width: 400px;
     }
 
+    /* Blog Responsive */
+
     .blogs {
         grid-template-columns: repeat(1, 1fr);
         place-items: center;
+    }
+
+
+    /* Banner Responsive */
+    .banner {
+        flex-direction: column;
+        padding: 10%;
+    }
+    .banner-info{
+        padding: 66px 102px 83px 54px;
+    }
+    
+    .banner-info h1 {
+        font-size: 40px;
+    }
+
+    .banner-image img {
+        margin-left: 0;
+        width: 400px;
+        height: 300px;
     }
 
 }
 
 
 @media only screen and (min-width:668px) and (max-width:992px) {
+
+     /* Header responsive */
     .headrer-dashboard {
         padding: 10%;
     }
@@ -260,12 +314,36 @@
         height: 300px;
     }
 
+    /* Player Responsive */
+
     .players {
         grid-template-columns: repeat(2, 1fr);
     }
 
+
+    /* Blog responsive */
     .blogs {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    
+     /* Banner Responsive */
+    .banner {
+        padding: 10%;
+    }
+    .banner-info{
+        padding: 66px 102px 83px 54px;
+    }
+    
+    .banner-info h1 {
+        font-size: 40px;
+    }
+
+    .banner-image img {
+        margin-top: 50px;
+        margin-left: 0;
+        width: 400px;
+        height: 300px;
     }
 
 }
